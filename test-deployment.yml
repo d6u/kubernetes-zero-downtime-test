@@ -1,0 +1,11 @@
+config:
+  target: http://104.196.98.186/
+  phases:
+  - duration: 60
+    arrivalRate: 10
+  timeout: 1
+
+scenarios:
+- flow:
+  - get:
+      url: /

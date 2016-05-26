@@ -13,13 +13,13 @@ spec:
       volumes:
       - name: nginx-config
         configMap:
-          name: nginx-configmap-v1
+          name: nginx-configmap-v7
           items:
           - key: hello-node
             path: hello-node.conf
       containers:
       - name: nginx
-        image: nginx
+        image: nginx:1.10
         ports:
         - name: http
           containerPort: 80

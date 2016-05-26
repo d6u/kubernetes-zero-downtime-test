@@ -17,7 +17,7 @@ spec:
       restartPolicy: Always
       containers:
       - name: hello-node
-        image: gcr.io/zero-downtime-test/hello-node:v8
+        image: gcr.io/zero-downtime-test-1322/hello-node:v10
         imagePullPolicy: Always
         ports:
         - name: http

@@ -1,6 +1,8 @@
 server {
   listen 80;
+  resolver 10.3.240.10;
+  set $backend_upstream http://hello-node.default.svc.cluster.local:3000;
   location / {
-    proxy_pass http://hello-node:80;
+    proxy_pass $backend_upstream;
   }
 }

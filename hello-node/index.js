@@ -1,5 +1,7 @@
 'use strict';
 
+const serverHostname = require('os').hostname();
+
 setTimeout(() => {
   const http = require('http');
 
@@ -9,7 +11,7 @@ setTimeout(() => {
   const server = http.createServer((req, res) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello World v8\n');
+    res.end(`Hello World v10 from ${serverHostname}\n`);
   });
 
   server.listen(port, hostname, () => {

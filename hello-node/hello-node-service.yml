@@ -6,5 +6,7 @@ spec:
   selector:
     app: hello-node
   ports:
-  - port: 80
-    targetPort: http
+    - name: http
+      port: 80
+      targetPort: http
+  clusterIP: None

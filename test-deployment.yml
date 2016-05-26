@@ -1,9 +1,9 @@
 config:
-  target: http://104.196.98.186/
+  target: http://104.196.119.134/
   phases:
   - duration: 60
-    arrivalRate: 10
-  timeout: 1
+    arrivalRate: 50
+  timeout: 5
 
 scenarios:
 - flow:
